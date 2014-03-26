@@ -47,7 +47,7 @@ def runner():
 			time.sleep(10)
 ##high volume attack on specific user
 def target(user):
-	for i in xrange(1,50):
+	for i in xrange(1,12):
 		if(ip_ban_checker(user) == True):
 			print "looks like i was blocked, dw ill wait for 10 minutes and then restart."
 			time.sleep(600)	
@@ -60,7 +60,9 @@ def random_flood():
 		users = load_user_index("usrindex.txt")
 		user = random.choice(users)
 		target(user)
-
+##kanikaram
+##thenotoriousvig
+##target("thenotoriousvig")
 random_flood()
 ##runner()
 ##ask_question("tansanity", "hey man!")
